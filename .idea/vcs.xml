@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/gym" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gym/pybullet-gym" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pybullet-gym" vcs="Git" />
   </component>
 </project>
