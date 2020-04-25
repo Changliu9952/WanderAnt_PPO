@@ -4,6 +4,14 @@ Author by: Chang, Yihang, Siyuan
 * Build skelenton for code
 * finish basic guidance for reproduce project
 
+* inital env
+* set torch seeds
+* set multiprocess
+for
+sample trajectories
+loss function 
+backprop
+
 
 ## Introduction
 An PPO implementation with Pybullet
