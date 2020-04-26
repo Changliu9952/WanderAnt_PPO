@@ -25,3 +25,22 @@ for t in range(1000):
     if done:
         print("Episode finished after {} timesteps".format(t + 1))
         break
+
+# import torch.multiprocessing as mp
+# import time
+# processor =[]
+# def func():
+#     while True:
+#         print('begin sleep')
+#         time.sleep(1)
+#         print('end sleep')
+#
+# for i in range(5):
+#     p = mp.Process(target=func)
+#     processor.append(p)
+#
+# for p in processor:
+#     p.start()
+#
+# for p in processor:
+#     p.join()

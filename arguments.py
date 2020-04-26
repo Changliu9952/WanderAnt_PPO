@@ -2,7 +2,7 @@ import argparse
 import torch
 
 # define some arguments that will be used...
-def achieve_args():
+def args():
     parse = argparse.ArgumentParser()
     parse.add_argument('--seed', type=int, default=123, help='the random seed')
     parse.add_argument('--policy_lr', type=float, default=3e-4, help='the learning rate of actor network')
@@ -14,8 +14,10 @@ def achieve_args():
     parse.add_argument('--epsilon', type=float, default=0.2, help='the clipped ratio...')
     parse.add_argument('--tau', type=float, default=0.95, help='the coefficient for calculate GAE')
     parse.add_argument('--max_episode_length', type=int, default=100, metavar='LENGTH', help='Maximum episode length')
-    parse.add_argument('--env_name', default='Walker2d-v1', help='environments name')
+    parse.add_argument('--env_name', default='AntPyBulletEnv-v0', help='environments name')
     parse.add_argument('--collection_length', type=int, default=8, help='the sample collection length(episodes)')
+
+    parse.add_argument('--num_processes', type=int, default=4, help='the sample collection length(episodes)')
 
     args = parse.parse_args()
 
